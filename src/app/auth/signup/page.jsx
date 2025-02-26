@@ -3,17 +3,17 @@ import Image from "next/image";
 export default function SignUp() {
     return (
         <div
-            className="w-full h-full bg-[url('/auth-bg.png')] bg-cover bg-center bg-no-repeat flex justify-center items-center  border-box"
+            className="w-full h-full bg-[url('/auth-bg.png')] bg-cover bg-center bg-no-repeat px-4 flex justify-center items-center  border-box"
         >
-            <div className="w-full max-width h-fit mt-[106px] mb-[106px] flex justify-between items-center bg-[#a5a5a538] backdrop-blur-[56.5px] rounded-[20px] relative py-12 px-12 gap-24">
-                <div className="w-1/2 flex justify-center items-center">
-                    <Image src='/Logo.png' height={250} width={250} className="object-contain" alt="Logo" />
+            <div className="w-full max-width h-fit mt-[106px] mb-[106px] flex flex-col md:flex-row justify-between items-center bg-[#a5a5a538] backdrop-blur-[56.5px] rounded-[20px] relative p-6 md:py-12 md:px-12 gap-24">
+                <div className="w-full  md:w-1/2 flex justify-center items-center">
+                    <Image src='/Logo.png' height={250} width={250} className="object-contain w-1/2 md:w-[250px]" alt="Logo" />
                 </div>
 
-                <Image src='/line.png' width={0} height={0} className="h-[90%] w-fit absolute left-[50%] translate-x-[-50%]" alt="seperator" />
+                <Image src='/line.png' width={0} height={0} className="hidden md:block h-[90%] w-fit absolute left-[50%] translate-x-[-50%]" alt="seperator" />
 
                 {/* Login Form */}
-                <div className="w-1/2 px-[50px] py-10 flex flex-col items-center gap-[31px] bg-[#ffffff] rounded-[20px] ">
+                <div className="w-full  md:w-1/2 px-[50px] py-10 flex flex-col items-center gap-[60px] bg-[#ffffff] rounded-[20px] ">
                     <div className="w-full">
                         <h1 className="H1">Create New Account</h1>
                         <p className="P1 text-[#7F7F7F]">Welcome to Free shops App controller</p>
