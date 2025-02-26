@@ -1,4 +1,4 @@
-import { title } from "process";
+import GrowthChart from './Dasboard/GrowthChart'
 
 const AnalyticsData = {
     cards: [
@@ -43,7 +43,7 @@ const Dashboard = () => {
         <div className="w-full flex flex-col items-start ">
             <h1 className="P4 text-[#F8F8F8]">Analytics</h1>
             {/* Graph Area */}
-            <div className="w-full grid grid-cols-2 gap-5">
+            <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-5">
                 <div className="flex flex-col gap-5">
                     {/* Cards */}
                     <div className="grid grid-cols-2 gap-5">
@@ -57,7 +57,10 @@ const Dashboard = () => {
                                     backgroundPosition: "center",
                                     backgroundRepeat:"no-repeat",
                                     backgroundPositionY:"bottom",
-                                    backgroundColor:"white" 
+                                    backgroundColor:"white" ,
+                                    borderStyle:"solid",
+                                    borderWidth:'2px',
+                                    borderColor: index === 0 ? '#199FB1' : index === 1 ? '#0FD43E' : index === 2 ? '#FFCC40' : '#FF0838'
                                 }}
                             >
                                 <p className="L4 text-left">{card.title}</p>
@@ -72,7 +75,7 @@ const Dashboard = () => {
                         className="w-full px-4 py-2 rounded-[20px]"
                         style={{ 
                             backgroundImage: `url(${AnalyticsData.total.img})`, 
-                            backgroundSize: "contain", 
+                            backgroundSize: "90%", 
                             backgroundPosition: "center",
                             backgroundRepeat:"no-repeat",
                             backgroundColor:"white"
@@ -83,7 +86,7 @@ const Dashboard = () => {
                     </div>
                 </div>
                 <div className="bg-white rounded-[20px]">
-                    Graph Area
+                    <GrowthChart />
                 </div>
             </div>
         </div>

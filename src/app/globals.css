@@ -133,10 +133,7 @@ body {
 
 .button-primary {
   width: fit-content;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 11px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -148,4 +145,20 @@ body {
   background-color: #199FB1;
   border-radius: 10px;
   color: #fff;
+}
+.button-secondary {
+  width: fit-content;
+  padding: 11px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0%;  
+  border-radius: 10px;
+  border:1px solid #199FB1;
+  color: #000;
 }

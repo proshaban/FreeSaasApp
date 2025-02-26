@@ -68,7 +68,7 @@ const NavBar = () => {
     const [activeLink, setActiveLink] = useState("/");
     
     return (
-        <div className="w-full h-full max-w-[293px] flex flex-col rounded-[20px] bg-[#ffffff] overflow-y-auto">
+        <div className="hidden md:block w-full h-full max-w-[293px] flex flex-col rounded-[20px] bg-[#ffffff] overflow-y-auto">
             <div className="w-full p-5 text-center text-[#199FB1] L3">
                 Logo
             </div>
